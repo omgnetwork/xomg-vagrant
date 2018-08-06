@@ -1,4 +1,6 @@
 # Installation via Vagrant
+Installation by Vagrant will be eventually merged into [Goban](https://github.com/omisego/goban).
+
 ## Prerequisites
 * Ensure that [Vagrant](https://www.vagrantup.com/) installed on your local machine
 
