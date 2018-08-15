@@ -20,7 +20,7 @@ virtualenv DEV
 source DEV/bin/activate
 
 #Populus
-wget https://github.com/omisego/omisego/blob/develop/populus/requirements.txt
+wget https://github.com/omisego/elixir-omg/blob/develop/populus/requirements.txt
 pip3 install -r populus/requirements.txt
 
 #solc

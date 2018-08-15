@@ -11,7 +11,7 @@ https://github.com/omisego/omg-vagrant
 
 Run:
 ```
-cd omisego-vagrant
+cd omg-vagrant
 vagrant up --provision
 ```
 
