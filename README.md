@@ -6,7 +6,7 @@ Installation by Vagrant will be eventually merged into [Goban](https://github.co
 
 Clone this repository:
 ```
-https://github.com/omisego/omisego-vagrant
+https://github.com/omisego/omg-vagrant
 ```
 
 Run:
@@ -31,7 +31,7 @@ export LANG=C.UTF-8
 
 Get the code and pull elixir dependencies
 ```
-git clone https://github.com/omisego/omisego
+git clone https://github.com/omisego/elixir-omg
 cd omisego
 HEX_HTTP_CONCURRENCY=1 HEX_HTTP_TIMEOUT=120 mix deps.get
 
