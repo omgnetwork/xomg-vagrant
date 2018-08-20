@@ -6,7 +6,13 @@ apt-get -y install build-essential autoconf libtool libgmp3-dev libssl-dev wget 
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && dpkg -i erlang-solutions_1.0_all.deb
 apt-get update
 apt-get install -y esl-erlang=1:20.3.6
-apt-get -y install elixir
+apt-get -y install elixir=1.6.5-1
+
+## Stop Erlang and Elixir from being upgraded
+```
+sudo apt-mark hold esl-erlang
+sudo apt-mark hold elixir
+```
 
 #Geth
 add-apt-repository -y ppa:ethereum/ethereum
