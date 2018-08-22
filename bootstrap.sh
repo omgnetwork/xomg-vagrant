@@ -25,12 +25,17 @@ pip3 install virtualenv
 virtualenv DEV
 source DEV/bin/activate
 
-#Populus
-wget https://github.com/omisego/elixir-omg/blob/develop/populus/requirements.txt
-pip3 install -r populus/requirements.txt
-
-#solc
+#Solc
 sudo apt-get install libssl-dev solc
 
-#rebar
+#Rebar
 mix do local.hex --force, local.rebar --force
+
+# contract building requires character encoding to be set
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+pip3 install -r elixir-omg/contracts/requirements.txt
+
+#build!
+cd elixir-omg
+mix deps.get

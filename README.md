@@ -17,24 +17,7 @@ vagrant up --provision
 
 Wait a few minutes for all the dependencies to finish installing
 
-SSH into vagrant:
+SSH into vagrant and run tests to check that everything was built successfully:
 ```
 vagrant ssh
-```
-
-Set ENVs to compile
-```
-source DEV/bin/activate
-export LC_ALL=C.UTF-8
-export LANG=C.UTF-8
-```
-
-Get the code and pull elixir dependencies
-```
-git clone https://github.com/omisego/elixir-omg
-cd omisego
-HEX_HTTP_CONCURRENCY=1 HEX_HTTP_TIMEOUT=120 mix deps.get
-
-compile and test
-mix test --no-start
 ```
