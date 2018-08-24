@@ -1,6 +1,6 @@
 #Get dependencies
 apt-get update
-apt-get -y install build-essential autoconf libtool libgmp3-dev libssl-dev wget software-properties-common git
+apt-get -y install build-essential autoconf libtool libgmp3-dev libssl-dev wget software-properties-common git postgresql postgresql-contrib
 
 #Erlang and Elixir
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && dpkg -i erlang-solutions_1.0_all.deb
@@ -30,6 +30,9 @@ sudo apt-get install libssl-dev solc
 
 #Rebar
 mix do local.hex --force, local.rebar --force
+
+#clone repo
+git clone https://github.com/omisego/elixir-omg
 
 # contract building requires character encoding to be set
 export LC_ALL=C.UTF-8
