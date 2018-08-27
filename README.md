@@ -37,6 +37,6 @@ configure the correct encoding and python version
 run a test to see if the installation works correctly
 ```
 
-$sudo mix test
+[vagrant]$ sudo mix test 
 ```
 Continue the [Getting Started guide](https://github.com/omisego/elixir-omg)
