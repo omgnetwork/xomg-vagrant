@@ -42,4 +42,4 @@ pip3 install -r elixir-omg/contracts/requirements.txt
 
 #build!
 cd elixir-omg
-mix deps.get
+HEX_HTTP_CONCURRENCY=1 HEX_HTTP_TIMEOUT=240 mix deps.get
