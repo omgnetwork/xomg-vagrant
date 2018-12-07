@@ -33,6 +33,7 @@ mix do local.hex --force, local.rebar --force
 
 #clone repo
 git clone https://github.com/omisego/elixir-omg
+git checkout v0.0.1
 
 # contract building requires character encoding to be set
 export LC_ALL=C.UTF-8
